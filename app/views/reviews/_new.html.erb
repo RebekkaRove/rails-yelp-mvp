@@ -1,0 +1,5 @@
+<%= form_for ([ @restaurant, Review.new], remote: true) do |form| %>
+  <br>
+  <%= form.text_area :body, size: '50x20' %><br>
+  <%= form.submit %>
+<% end %>
